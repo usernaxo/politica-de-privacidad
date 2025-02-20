@@ -3,22 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad</title>
+    <link rel="icon" type="image/png" href="sei-icon.png">
+    <title>Política de Privacidad - SEI Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #background {
+            background-color: white;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #d0d0d0;
+            margin: 30px 20px;
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(1, 87, 155);
+            padding: 5px;
+        }
+        #icon {
+            width: 70px;
+        }
+        #headerText {
+            margin-left: 7px;
+            color: white;
+            font-size: 12px;
+
+        }
+        .divTitle {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #title {
+            font-size: 18px;
+            color: rgb(1, 87, 155);
+        }
+        #titleDate {
+            margin: 10px 0px;
+            font-size: 12px;
+            color: #777777;
+        }
+        .grid {
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card {
+            width: calc(50% - 10px);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+        }
+        .cardTitle {
+            padding: 10px 10px 0px 10px;
+            color: #333333;
+            font-size: 14px;
+        }
+        .cardDescription {
+            padding: 10px 10px 10px 10px;
+            color: #555555;
+            font-size: 12px;
+        }
+        .cardItem {
+            list-style-type: none;
+            padding: 0px 10px 10px 10px;
+            color: #777777;
+            font-size: 12px;
+        }
+        #contact {
+            margin: 10px;
+        }
+        .contactDescription {
+            font-size: 12px;
+            color: #555555;
+            margin: 5px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-<body>
-    <h1>Política de Privacidad</h1>
-    <p>Última actualización: [Fecha]</p>
-    
-    <h2>1. Información que recopilamos</h2>
-    <p>Recopilamos los siguientes datos: ...</p>
-
-    <h2>2. Uso de la información</h2>
-    <p>Usamos los datos recopilados para ...</p>
-
-    <h2>3. Compartición de datos</h2>
-    <p>No compartimos datos con terceros excepto cuando es necesario para ...</p>
-
-    <h2>4. Contacto</h2>
-    <p>Si tienes preguntas sobre nuestra política de privacidad, contáctanos en: [tu-email@example.com]</p>
+<body id="background">
+    <header class="header">
+        <div class="header">
+            <img id="icon" src="sei-logo.png"><h1 id="headerText">Software</h1>
+        </div>
+    </header>
+    <div class="divTitle">
+        <h1 id="title">Política de Privacidad</h1>
+        <h1 id="titleDate">Última Actualización - 20 de Febrero, 2025</h1>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h1 class="cardTitle">Información que recopilamos</h1>
+            <p class="cardDescription"><strong>SEI Software </strong>recopila los siguientes datos cuando el usuario utiliza nuestra aplicación:</p>
+            <ul class="cardItem">
+                <li><strong>Correo electrónico empresarial:</strong> Utilizado para la identificación del usuario dentro de la aplicación.</li>
+                <li><strong>Clave de acceso:</strong> Utilizada para garantizar la seguridad y autenticación del usuario.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="cardTitle">Uso de la información</h1>
+            <p class="cardDescription">Los datos recopilados se utilizan exclusivamente para los siguientes propósitos:</p>
+            <ul class="cardItem">
+                <li>Autenticación segura y acceso a la aplicación.</li>
+                <li>Identificación del usuario dentro de los servicios proporcionados por <strong>SEI Software</strong>.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="cardTitle">Datos mostrados en la aplicación</h1>
+            <p class="cardDescription">En la pantalla de la aplicación, se muestran los siguientes datos del usuario:</p>
+            <ul class="cardItem">
+                <li>Nombre y apellidos.</li>
+                <li>Correo personal.</li>
+                <li>Dirección.</li>
+                <li>Género.</li>
+                <li>Nacionalidad.</li>
+                <li>Teléfono de contacto.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="cardTitle">Compartición de datos</h1>
+            <p class="cardDescription">
+                SEI Software no comparte información del usuario con terceros bajo ninguna circunstancia.
+            </p>
+            <p class="cardDescription">
+                Toda la información recopilada a través de nuestra aplicación se utiliza exclusivamente para mejorar la experiencia del usuario y optimizar el funcionamiento de nuestros servicios.
+            </p>
+        </div>
+        <div class="card">
+            <h1 class="cardTitle">Seguridad de los datos</h1>
+            <p class="cardDescription">Implementamos medidas de seguridad para proteger la información del usuario y evitar accesos no autorizados. La clave de acceso es almacenada de forma segura y no es visible para terceros.</p>
+        </div>
+    </div>
+    <hr>
+    <div id="contact">
+        <p class="contactDescription">Si tienes preguntas sobre nuestra política de privacidad, puedes contactarnos en:</p>
+        <p class="contactDescription"><strong>Correo electrónico:</strong> seiconsultores.sei@gmail.com</p>
+    </div>
 </body>
 </html>
